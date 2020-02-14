@@ -7,6 +7,7 @@ import Dynamic from 'containers/Dynamic'
 import { LoadingPage } from 'components/Loading'
 import './app.css'
 
+
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
 

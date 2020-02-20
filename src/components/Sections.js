@@ -121,4 +121,4 @@ const Hero = ({ className, theme, children, ...props }) => {
 }
 
 
-export { Hero }
+export Hero

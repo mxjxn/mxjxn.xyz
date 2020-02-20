@@ -2,9 +2,9 @@ export default {
   // some themes to choose from 
   dark: {
     background: '#070707',
-    color: '#bbb',
+    color: '#ddd',
     fonts: {
-      baseFamily: '"PT Sans", sans-serif',
+      baseFamily: '"Palanquin Dark", "PT Sans", sans-serif',
       headerFamily: 'Permanent Marker',
       base: '18px',
       large: '400%',

@@ -1,28 +1,23 @@
 import path from 'path'
 import axios from 'axios'
 
-export default {
-  // getRoutes: async () => {
-  //   const { data: posts } = await axios.get(
-  //     'https://jsonplaceholder.typicode.com/posts'
-  //   )
+const REACT_STATIC_PATHS = {
+  src: 'src',
+  dist: 'dist',
+  devDist: 'dist',
+  public: 'public',
+}
 
-  //   return [
-  //     {
-  //       path: '/blog',
-  //       getData: () => ({
-  //         posts,
-  //       }),
-  //       children: posts.map(post => ({
-  //         path: `/post/${post.id}`,
-  //         template: 'src/containers/Post',
-  //         getData: () => ({
-  //           post,
-  //         }),
-  //       })),
-  //     },
-  //   ]
-  // },
+export default {
+  basePath: '',
+  getRoutes: () => [
+    {
+      path: '/',
+      component: 'src/pages/index',
+      getData: () => ({ title: '' }),
+    }
+  ],
+  paths: REACT_STATIC_PATHS,
   plugins: [
     [
       require.resolve('react-static-plugin-source-filesystem'),
@@ -40,4 +35,27 @@ export default {
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap'),
   ],
+  beforeRenderToHtml: (render, Comp, meta) => {
+    const sheet = new ServerStyleSheet()
+    const html = render(sheet.collectStyles(<Comp />))
+    meta.styleTags = sheet.getStyleElement()
+    return html
+  },
+  Document: class CustomHTML extends React.Component {
+    const { Html, Head, Body, children, renderMeta } = this.props;
+    render() {
+      return (
+      <Html>
+        <Head>
+        <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>MXJXN is Max Jackson -- Developer, artist and musician.</title>
+        </Head>
+        <Body>
+          {children}
+        </Body>
+      </Html>
+      )
+    }
+  }
 }

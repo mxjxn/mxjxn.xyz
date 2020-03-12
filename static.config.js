@@ -1,3 +1,4 @@
+import React from 'react'
 import path from 'path'
 import axios from 'axios'
 
@@ -42,8 +43,8 @@ export default {
     return html
   },
   Document: class CustomHTML extends React.Component {
-    const { Html, Head, Body, children, renderMeta } = this.props;
     render() {
+      const { Html, Head, Body, children, renderMeta } = this.props;
       return (
       <Html>
         <Head>

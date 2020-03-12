@@ -3,4 +3,14 @@ node_modules/
 package-lock.json
 yarn.lock
 artifacts/
+dist/
 tmp/
+
+npm-debug.log
+yarn-debug.log
+.eslintrc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

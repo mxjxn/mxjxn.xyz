@@ -4,7 +4,7 @@ export default {
     background: '#070707',
     color: '#ddd',
     fonts: {
-      baseFamily: '"Palanquin Dark", "PT Sans", sans-serif',
+      baseFamily: '"IBM Plex Mono", "PT Sans", sans-serif',
       headerFamily: 'Permanent Marker',
       base: '18px',
       large: '400%',

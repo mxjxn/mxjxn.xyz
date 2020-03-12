@@ -1,0 +1,85 @@
+[15:16:58.272] Global cache location '/home/mxjxn/.cache/typescript/3.7', safe file path '/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/typingSafeList.json', types map path /home/mxjxn/.config/yarn/global/node_modules/typescript/lib/typesMap.json
+[15:16:58.274] Processing cache location '/home/mxjxn/.cache/typescript/3.7'
+[15:16:58.274] Trying to find '/home/mxjxn/.cache/typescript/3.7/package.json'...
+[15:16:58.276] Loaded content of '/home/mxjxn/.cache/typescript/3.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.470"}}
+[15:16:58.276] Loaded content of '/home/mxjxn/.cache/typescript/3.7/package-lock.json'
+[15:16:58.276] Finished processing cache location '/home/mxjxn/.cache/typescript/3.7'
+[15:16:58.276] Process id: 1236
+[15:16:58.276] NPM location: /home/mxjxn/.nvm/versions/node/v13.2.0/bin/npm (explicit '--npmLocation' not  provided)
+[15:16:58.276] validateDefaultNpmLocation: false
+[15:16:58.276] Npm config file: /home/mxjxn/.cache/typescript/3.7/package.json
+[15:16:58.277] Updating types-registry npm package...
+[15:16:58.277] Exec: /home/mxjxn/.nvm/versions/node/v13.2.0/bin/npm install --ignore-scripts types-registry@latest
+[15:16:59.838]     Succeeded. stdout:
+    + types-registry@0.1.479
+    updated 1 package and audited 1 package in 0.86s
+found 0 vulnerabilities
+
+
+[15:16:59.838] Updated types-registry npm package
+[15:17:2.272] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.es5.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.dom.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.scripthost.d.ts","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/Hero.js","/home/mxjxn/workspace/mxjxn.github.io/src/containers/Flex.js","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/DevPanel.js","/home/mxjxn/workspace/mxjxn.github.io/src/themes.js","/home/mxjxn/workspace/mxjxn.github.io/src/pages/index.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"],"projectRootPath":"/home/mxjxn/workspace/mxjxn.github.io/src/pages","kind":"discover"}
+[15:17:2.303] Loaded safelist from types map file '/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/typesMap.json'
+[15:17:2.307] Explicitly included types: []
+[15:17:2.309] Inferred typings from unresolved imports: ["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"]
+[15:17:2.309] Result: {"cachedTypingPaths":[],"newTypingNames":["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:2.309] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:2.310] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components
+[15:17:2.313] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules
+[15:17:2.314] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components
+[15:17:2.314] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules
+[15:17:2.314] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/bower_components
+[15:17:2.314] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/node_modules
+[15:17:2.315] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components
+[15:17:2.315] DirectoryWatcher:: Added:: WatchInfo: /home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules
+[15:17:2.315] Installing typings ["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"]
+[15:17:2.316] '@emotion/unitless':: Entry for package 'emotion__unitless' does not exist in local types registry - skipping...
+[15:17:2.316] 'react-reveal':: Entry for package 'react-reveal' does not exist in local types registry - skipping...
+[15:17:2.316] Npm config file: /home/mxjxn/.cache/typescript/3.7/package.json
+[15:17:2.316] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"3.7.3","projectName":"/dev/null/inferredProject1*"}
+[15:17:2.317] Response has been sent.
+[15:17:2.317] #1 with arguments'["@types/hoist-non-react-statics@ts3.7","@types/object-assign@ts3.7","@types/prop-types@ts3.7","@types/react@ts3.7","@types/react-is@ts3.7","@types/shallowequal@ts3.7","@types/styled-components@ts3.7"]'.
+[15:17:2.317] Exec: /home/mxjxn/.nvm/versions/node/v13.2.0/bin/npm install --ignore-scripts @types/hoist-non-react-statics@ts3.7 @types/object-assign@ts3.7 @types/prop-types@ts3.7 @types/react@ts3.7 @types/react-is@ts3.7 @types/shallowequal@ts3.7 @types/styled-components@ts3.7 --save-dev --user-agent="typesInstaller/3.7.3"
+[15:17:4.629]     Succeeded. stdout:
+    + @types/prop-types@15.7.3
+    + @types/hoist-non-react-statics@3.3.1
++ @types/react-is@16.7.1
++ @types/object-assign@4.0.30
++ @types/shallowequal@1.1.1
++ @types/react@16.9.22
++ @types/styled-components@5.0.0
+added 11 packages from 74 contributors and audited 32 packages in 1.473s
+found 0 vulnerabilities
+
+
+[15:17:4.629] npm install #1 took: 2312 ms
+[15:17:4.629] Installed typings ["@types/hoist-non-react-statics@ts3.7","@types/object-assign@ts3.7","@types/prop-types@ts3.7","@types/react@ts3.7","@types/react-is@ts3.7","@types/shallowequal@ts3.7","@types/styled-components@ts3.7"]
+[15:17:4.663] Installed typing files ["/home/mxjxn/.cache/typescript/3.7/node_modules/@types/hoist-non-react-statics/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/object-assign/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/prop-types/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react-is/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/shallowequal/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/styled-components/ts3.7/index.d.ts"]
+[15:17:4.663] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/mxjxn/.cache/typescript/3.7/node_modules/@types/hoist-non-react-statics/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/object-assign/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/prop-types/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react-is/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/shallowequal/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/styled-components/ts3.7/index.d.ts"],"unresolvedImports":["@emotion/unitless","hoist-non-react-statics","object-assign","prop-types","react","react-is","react-reveal","shallowequal","styled-components"],"kind":"action::set"}
+[15:17:4.663] Response has been sent.
+[15:17:4.663] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject1*","packagesToInstall":["@types/hoist-non-react-statics@ts3.7","@types/object-assign@ts3.7","@types/prop-types@ts3.7","@types/react@ts3.7","@types/react-is@ts3.7","@types/shallowequal@ts3.7","@types/styled-components@ts3.7"],"installSuccess":true,"typingsInstallerVersion":"3.7.3"}
+[15:17:4.663] Response has been sent.
+[15:17:5.392] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.es5.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.dom.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.scripthost.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react/global.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/prop-types/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/hoist-non-react-statics/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/styled-components/ts3.7/index.d.ts","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/Hero.js","/home/mxjxn/workspace/mxjxn.github.io/src/containers/Flex.js","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/DevPanel.js","/home/mxjxn/workspace/mxjxn.github.io/src/themes.js","/home/mxjxn/workspace/mxjxn.github.io/src/pages/index.js","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/object-assign/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/react-is/index.d.ts","/home/mxjxn/.cache/typescript/3.7/node_modules/@types/shallowequal/index.d.ts"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["react-reveal"],"projectRootPath":"/home/mxjxn/workspace/mxjxn.github.io/src/pages","kind":"discover"}
+[15:17:5.392] Explicitly included types: []
+[15:17:5.394] Inferred typings from unresolved imports: ["react-reveal"]
+[15:17:5.395] Result: {"cachedTypingPaths":[],"newTypingNames":["react-reveal"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:5.395] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["react-reveal"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:5.396] Installing typings ["react-reveal"]
+[15:17:5.396] 'react-reveal':: Entry for package 'react-reveal' does not exist in local types registry - skipping...
+[15:17:5.397] All typings are known to be missing or invalid - no need to install more typings
+[15:17:5.397] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["react-reveal"],"kind":"action::set"}
+[15:17:5.397] Response has been sent.
+[15:17:5.722] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.es5.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.dom.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/mxjxn/.config/yarn/global/node_modules/typescript/lib/lib.scripthost.d.ts","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/Hero.js","/home/mxjxn/workspace/mxjxn.github.io/src/containers/Flex.js","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/DevPanel.js","/home/mxjxn/workspace/mxjxn.github.io/src/themes.js","/home/mxjxn/workspace/mxjxn.github.io/src/pages/index.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["react-reveal"],"projectRootPath":"/home/mxjxn/workspace/mxjxn.github.io/src/pages","kind":"discover"}
+[15:17:5.722] Explicitly included types: []
+[15:17:5.723] Inferred typings from unresolved imports: ["react-reveal"]
+[15:17:5.723] Result: {"cachedTypingPaths":[],"newTypingNames":["react-reveal"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:5.723] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["react-reveal"],"filesToWatch":["/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/components/Sections/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/containers/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/containers/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/node_modules","/home/mxjxn/workspace/mxjxn.github.io/src/pages/bower_components","/home/mxjxn/workspace/mxjxn.github.io/src/pages/node_modules"]}
+[15:17:5.723] Installing typings ["react-reveal"]
+[15:17:5.723] 'react-reveal':: Entry for package 'react-reveal' does not exist in local types registry - skipping...
+[15:17:5.724] All typings are known to be missing or invalid - no need to install more typings
+[15:17:5.724] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["react-reveal"],"kind":"action::set"}
+[15:17:5.724] Response has been sent.

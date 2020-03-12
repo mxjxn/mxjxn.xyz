@@ -1,28 +1,47 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+import DevEntry from './DevEntry.mdx'
+import TechUsed from './TechUsed.mdx'
+import Flex from '../../containers/Flex'
+
 
 const DevSection = styled.section`
-margin:0;
-text-align:center
-height:50%;
-width: 100%;
-background: black;
-padding: 0 auto;
-`
+  margin:0 3.5em;
+  text-align:center
+  height:50%;
+  background-image: linear-gradient(180deg, #bbbbbb 0%, #cccccc 5%, #dddddd 95%, #eeeeee 100%);
+  color: #111;
+  border: 0.2rem solid #222;
 
-const Boxes = styled.div`
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  margin: 1em;
+
+  border-radius: 1em;
+  ul {
+    list-style-type: none;
+    list-style-position: inside;
+  }
+  li {
+    background: linear-gradient(45deg, #ff0000 0%, #770000 100%);
+  }
+  li li {
+    background: linear-gradient(45deg, #990000 0%, #550000 100%);
+  }
 `
 
 const Pane = styled.div`
-  background: #444;
-  border-radius: 8px;
-  display: inline-block;
-  width: 20vw;
+  margin:1rem;
+  font-size: 0.8em;
+  min-width: 35.2%;
+  h2, h3, h4 {
+    margin: 0.01em 0;
+    line-height: 1em;
+    background-image: linear-gradient(10deg, #999999 0%, #bbbbbb 100%);
+    border-radius: 5em;
+    color: #111;
+  }
+  & > * {
+    padding: 0.25em 1em;
+  }
 `
 
 const Btn = styled.button`
@@ -38,25 +57,20 @@ top: 0px;
 }
 `
 
-const PaneContent = styled.div`
-background:#333;
-`
-
 const DevPanel = () => {
   return (
-    <DevSection>
-      <Fade delay={2000}>
-        <Boxes>
+    <Fade delay={1000}>
+      <DevSection>
+        <Flex>
           <Pane>
-            <h2>Front-end development</h2>
-            <PaneContent>
-              My manem mo omak
-            </PaneContent>
+            <TechUsed />
           </Pane>
-
-        </Boxes>
+          <Pane>
+            <DevEntry />
+          </Pane>
+        </Flex>
+      </DevSection>
       </Fade>
-    </DevSection>
   )
 }
 

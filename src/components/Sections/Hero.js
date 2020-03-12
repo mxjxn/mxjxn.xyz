@@ -1,24 +1,77 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import Fade from 'react-reveal/Fade'
+import Rotator from 'react-text-rotator'
 
 const anim = keyframes`
   from { background-position: 0% 0; }
   to { background-position: 200% 0; }
 `
+const rainbowShadow = keyframes`
+0%, 100% {
+  box-shadow: .04em .04em .03em #ff0000,
+              .08em .08em .03em #ffa500,
+              .12em .12em .03em #ffff00,
+              .16em .16em .03em #00ff00, .20em .20em .03em #00a3ff, .24em .24em .03em #ff00ff;
+}
+16.5% {
+  box-shadow: .04em .04em  .03em #ffa500,
+              .08em .08em  .03em #ffff00,
+              .12em .12em  .03em #00ff00,
+              .16em .16em  .03em #00a3ff,
+              .20em .20em  .03em #ff00ff,
+              .24em .24em  .03em #ff0000;
+}
+33% {
+  box-shadow: .04em .04em  .03em #ffff00,
+              .08em .08em  .03em #00ff00,
+              .12em .12em  .03em #00a3ff,
+              .16em .16em  .03em #ff00ff,
+              .20em .20em  .03em #ff0000,
+              .24em .24em  .03em #ffa500;
+}
+50% {
+  box-shadow: .04em .04em  .03em #00ff00,
+              .08em .08em  .03em #00a3ff,
+              .12em .12em  .03em #ff00ff,
+              .16em .16em  .03em #ff0000,
+              .20em .20em  .03em #ffa500,
+              .24em .24em  .03em #ffff00;
+}
+63.5% {
+  box-shadow: .04em .04em  .03em #00a3ff,
+              .08em .08em  .03em #ff00ff,
+              .12em .12em  .03em #ff0000,
+              .16em .16em  .03em #ffa500,
+              .20em .20em  .03em #ffff00,
+              .24em .24em  .03em #00ff00;
+}
+78% {
+  box-shadow: .04em .04em  .03em #ff00ff,
+              .08em .08em  .03em #ff0000,
+              .12em .12em  .03em #ffa500,
+              .16em .16em  .03em #ffff00,
+              .20em .20em  .03em #00ff00,
+              .24em .24em  .03em #00a3ff;
+}
+`
 
 const MxSection = styled.section`
   position: relative;
-text-align:center;
-  font-size: 1.7em;
-  padding: 1em 3.5em;
+  margin-bottom: 0.8em;
+  display: grid;
+  grid-template-columns: auto 1fr 8fr 1fr;
+  min-width: 690px;
+  text-align:center;
+  font-size: 1em;
+  padding: 0.2em 3.5em 0.05em;
+  animation: ${ rainbowShadow } 5s linear infinite;
   overflow: hidden;
-  background: ${ ({ theme }) => theme.background };
-  color: ${ ({ theme }) => theme.color };
-  transition-property: background, color;
-  transition-duration: 0.25s;
-  transition-delay: 0.2s;
+  flex-flow: row;
+  align-items: baseline;
+  background: ${ ({ theme }) => theme.background }; color: ${ ({ theme }) => theme.color }; transition-property: background, color; transition-duration: 0.25s; transition-delay: 0.2s;
   .wow {
+    display:inline-block;
     background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);
     background-size: 200% auto;
     background-clip: text;
@@ -33,111 +86,64 @@ text-align:center;
   .center {
     text-align: center;
   }
+  .inline {
+    padding-left:0.35em;
+    align-self: center;
+  }
 `
 
 const MXJXNMarker = styled.h1`
-z-index:2;
+  z-index:2;
   font-family: ${ ({ theme: { fonts } }) => fonts.headerFamily };
   font-weight:bold;
   color: blue;
-  font-size: 5em;
   letter-spacing: 0.05em;
   position: relative;
   margin:0;
-padding: 1rem 0;
-`
-
-const MXJXNLead = styled.div`
-  font-family: ${ ({ theme: { fonts } }) => fonts.baseFamily };
-  position:relative;
-  padding:4em;
-  border-radius 16px 100px;
-  background: linear-gradient(-40deg, #222 0%, #555 100%);
-  margin: 0.5em;
-  display: inline-block;
+  padding: 1rem 0;
+  align-self: flex-end;
 `
 
 const Tagline = styled.div`
-  position:relative;
-  padding: 0 0 0.71em;
-  display: inline-flex;
-  flex-flow: row;
-  align-items: baseline;
-  flex-stretch: 3;
-  .inline {
-    vertical-align: middle;
-    display:inline;
-  }
+  font-size: 1em;
+  flex-grow: 8;
+  padding 1rem 0;
+`
+const LilGuy = styled.div`
+  font-size: 1.25em;
+  flex-grow: 1;
 `
 
-const BGLine = styled.div`
-  padding: 14.3em 0;
-z-index: -10;
-margin: -14em;
-font-size:1.1em;
-${ props => props.fontpx ? ("font-size: " + props.fontpx + "px;") : "" }
-  transform: rotate(${ props => props.rotate }deg);
-  background: linear-gradient(to left, #3777b9 05%, #000000 50%, #c64400 95%);
-`
 
-const Word = styled.span`
-  z-index:10;
-  margin:0 0.4em 0 0;
-  ${ props => props.block ? "margin-right: 0; margin-bottom: 0.2em;" : "" }
-  font-family: ${ props => props.fancy ? props.theme.fonts.headerFamily : props.theme.fonts.baseFamily};
-  letter-spacing: 0.025em;
-  font-size: 1.3em;
-  ${ props => props.big? "font-size: 5em;": ""}
-  ${ props => props.medium? "font-size: 2.9em;": ""}
-`
-
-const CascadeFade = ( { children,  cascadeDelay, fadeDuration, fadeDelay } ) => (
-  <>
-  {
-    children.map((item, i) => (
-      <span
-        key={`fade-${item}-${Math.floor(Math.random() * 1000)}`}
-        className="inline">
-        <Fade
-          duration={ fadeDuration }
-          delay={ (i+1) * cascadeDelay + fadeDelay }>
-          { item }
-        </Fade>
-      </span>
-    ))
-  }
-  </>
-)
-
-
-
-const Hero = ({ className, theme, children, ...props }) => {
+const Hero = ({ className, theme }) => {
+  const content = [
+    {text: "... love: \"art, music, code, bikes, community\" ..."},
+    {text: "... name: \"Max Jackson\" ..."},
+    {text: "... location: \"Boston, Massachusetts\" ..."},
+    {text: "... profession: \"full-stack web development\" ..."},
+    {text: "... favoriteLanguages: \"javascript, clojure\" ..."},
+    {text: "... favoriteTools: \"re-frame, react\" ..."},
+    {text: "... learning: \"3D modeling, Unity\" ..."},
+    {text: "... learning: \"Racket-lang, Dart, C++, Golang\" ..."},
+    {text: "... hustle: \"Rogue Pedicab\" ..."},
+  ]
 
   return (
     <ThemeProvider theme={theme}>
       <MxSection className={className}>
-        <Word>
-          <Fade duration={300}>
-            Hi, I'm
-          </Fade>
-        </Word>
         <MXJXNMarker className="wow">
-            <Fade top duration={500} delay={600}>
-              MXJXN
+            <Fade top duration={500}>
+              <div>MXJXN.xyz</div>
             </Fade>
         </MXJXNMarker>
-        <Fade duration={300} delay={1000}>
-          <BGLine fontpx={50} rotate={3.4}>which is shorthand for</BGLine>
-        </Fade>
-        <div className="bottom">
-          <Fade delay={1400} duration={200}>
-            <Word fancy medium block className="wow redgradient">Max Jackson.</Word>
-          </Fade>
-        </div>
+        <LilGuy>=> (</LilGuy>
+        <Tagline>
+          <Rotator time={4000} content={content} />
+        </Tagline>
+        <LilGuy>)</LilGuy>
       </MxSection>
     </ThemeProvider>
   )
 }
-
 
 export default Hero;

@@ -1,5 +1,5 @@
 {
-  "name": "react-static-example-basic",
+  "name": "MXJXN.xyz",
   "homepage": "https://mxjxn.github.io/mxjxn.xyz",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -28,6 +28,7 @@
     "react-static-plugin-reach-router": "^7.2.0",
     "react-static-plugin-sitemap": "^7.2.0",
     "react-static-plugin-source-filesystem": "^7.2.0",
+    "react-static-plugin-styled-components": "^7.2.2",
     "react-text-rotator": "^0.1.1",
     "styled-components": "^5.0.1"
   },

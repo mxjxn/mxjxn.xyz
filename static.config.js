@@ -11,6 +11,7 @@ const REACT_STATIC_PATHS = {
 }
 
 export default {
+  siteRoot: '',
   basePath: '',
   getRoutes: () => [
     {
@@ -27,6 +28,7 @@ export default {
         location: path.resolve('./src/pages'),
       },
     ],
+    'react-static-plugin-styled-components',
     [
       "react-static-plugin-mdx",
       {

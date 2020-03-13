@@ -28,7 +28,6 @@ export default {
         location: path.resolve('./src/pages'),
       },
     ],
-    'react-static-plugin-styled-components',
     [
       "react-static-plugin-mdx",
       {
@@ -36,6 +35,8 @@ export default {
         extensions: ['.mdx']
       }
     ],
+    'react-static-plugin-css-modules',
+    'react-static-plugin-styled-components',
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap'),
   ],
@@ -51,7 +52,7 @@ export default {
       return (
       <Html>
         <Head>
-        <meta charset="UTF-8"/>
+        <meta charSet="UTF-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>MXJXN is Max Jackson -- Developer, artist and musician.</title>
         </Head>

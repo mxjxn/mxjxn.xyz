@@ -7,7 +7,7 @@ import Dynamic from 'containers/Dynamic'
 import Section from 'containers/Section'
 
 import CodeBlock from './components/CodeBlock'
-import { FireH1, FireH2 } from './components/Fire'
+import { FireH1, FireH2, FireH3 } from './components/Fire'
 import { LoadingPage } from 'components/Loading'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,6 +26,7 @@ const markdownComponents = {
   code: CodeBlock,
   h1: FireH1,
   h2: FireH2,
+  h3: FireH3
 }
 
 function App() {

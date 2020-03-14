@@ -53,6 +53,12 @@ export default {
       <Html>
         <Head>
         <meta charSet="UTF-8"/>
+          <style>
+            @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+            @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);
+            @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+            @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+          </style>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>MXJXN is Max Jackson -- Developer, artist and musician.</title>
         </Head>

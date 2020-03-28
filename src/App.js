@@ -17,6 +17,7 @@ library.add(fab, faCheckSquare, faCoffee, faChartLine, faHammer)
 import { createGlobalStyle } from 'styled-components';
 // import './app.css'
 
+import './styles.css'
 
 
 // Any routes that start with 'dynamic' will be treated as non-static routes

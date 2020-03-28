@@ -29,8 +29,8 @@ const Examples = ({className}) => {
       </FireH3>
       <ExampleFlex>
         <Item>JS</Item>
-        <Item>CSS (can you tell?)</Item>
-        <Item>CLJS</Item>
+        <Item>Modern CSS practices</Item>
+        <Item>CLJS for web-apps</Item>
         <Item>React</Item>
         <Item>Redux</Item>
         <Item>Svelte</Item>

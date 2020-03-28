@@ -1,6 +1,6 @@
 {
   "name": "MXJXN.xyz",
-  "homepage": "http://mxjxn.xyz",
+  "homepage": "https://mxjxn.xyz",
   "private": true,
   "scripts": {
     "start": "react-static start",

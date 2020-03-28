@@ -10,8 +10,7 @@ const REACT_STATIC_PATHS = {
 }
 
 export default {
-  siteRoot: process.env.SITE_ROOT || '',
-  basePath: '',
+  siteRoot: 'https://mxjxn.xyz',
   getRoutes: () => [
     {
       path: '/',
@@ -52,6 +51,7 @@ export default {
       <Html>
         <Head>
         <meta charSet="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <style>
             @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
             @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono);

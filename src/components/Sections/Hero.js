@@ -98,6 +98,7 @@ const MXJXNMarker = styled.h1`
   font-weight:bold;
   color: blue;
   letter-spacing: 0.05em;
+  min-width: 170px;
   position: relative;
   margin:0;
   padding: 1rem 0;
@@ -117,14 +118,11 @@ const LilGuy = styled.div`
 
 const Hero = ({ className, theme }) => {
   const content = [
-    {text: "... love: \"art, music, code, bikes, community\" ..."},
+    {text: "... love: \"art, music, bikes, code\" ..."},
     {text: "... name: \"Max Jackson\" ..."},
-    {text: "... location: \"Boston, Massachusetts\" ..."},
-    {text: "... profession: \"full-stack web development\" ..."},
-    {text: "... favoriteLanguages: \"javascript, clojure\" ..."},
-    {text: "... favoriteTools: \"re-frame, react\" ..."},
-    {text: "... learning: \"3D modeling, Unity\" ..."},
-    {text: "... learning: \"Racket-lang, Dart, C++, Golang\" ..."},
+    {text: "... location: \"Boston\" ..."},
+    {text: "... profession: \"Web Development\" ..."},
+    {text: "... languages: \"javascript, clojure\" ..."},
     {text: "... hustle: \"Rogue Pedicab\" ..."},
   ]
 
@@ -132,9 +130,7 @@ const Hero = ({ className, theme }) => {
     <ThemeProvider theme={theme}>
       <MxSection className={className}>
         <MXJXNMarker className="wow">
-            <Fade top duration={500}>
-              <div>MXJXN.xyz</div>
-            </Fade>
+          <div>MXJXN.xyz</div>
         </MXJXNMarker>
         <LilGuy>=> (</LilGuy>
         <Tagline>

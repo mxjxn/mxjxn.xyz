@@ -1,6 +1,6 @@
 {
   "name": "MXJXN.xyz",
-  "homepage": "https://mxjxn.github.io/mxjxn.xyz",
+  "homepage": "http://mxjxn.xyz",
   "private": true,
   "scripts": {
     "start": "react-static start",
@@ -8,7 +8,7 @@
     "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
-    "predeploy": "yarn run build",
+    "predeploy": "SITE_ROOT='http://mxjxn.xyz' yarn run build",
     "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {

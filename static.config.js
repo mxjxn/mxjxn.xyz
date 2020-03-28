@@ -1,7 +1,6 @@
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 import path from 'path'
-import axios from 'axios'
 
 const REACT_STATIC_PATHS = {
   src: 'src',
@@ -11,7 +10,7 @@ const REACT_STATIC_PATHS = {
 }
 
 export default {
-  siteRoot: '',
+  siteRoot: process.env.SITE_ROOT || '',
   basePath: '',
   getRoutes: () => [
     {

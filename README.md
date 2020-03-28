@@ -1,3 +1,8 @@
-# React-Static - Basic Template
+# MXJXN.xyz
 
-To use this template, run `react-static create` and use the `basic` template.
+#### A Portfolio / Homepage site
+
+
+##### Made with 
+ `react-static create` using the `basic` template.
+ Hosted on Github Pages at [mxjxn.xyz](https://mxjxn.xyz).

@@ -61,7 +61,6 @@ const MxSection = styled.section`
   margin-bottom: 0.8em;
   display: grid;
   grid-template-columns: auto 1fr 8fr 1fr;
-  min-width: 690px;
   text-align:center;
   font-size: 1em;
   padding: 0.2em 3.5em 0.05em;

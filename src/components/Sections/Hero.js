@@ -125,12 +125,12 @@ const LilGuy = styled.div`
 
 const Hero = ({ className, theme }) => {
   const content = [
-    {text: "... love: \"art, music, bikes, code\" ..."},
-    {text: "... name: \"Max Jackson\" ..."},
-    {text: "... location: \"Boston\" ..."},
-    {text: "... profession: \"Web Development\" ..."},
-    {text: "... languages: \"javascript, clojure\" ..."},
-    {text: "... hustle: \"Rogue Pedicab\" ..."},
+    {text: "name: \"Max Jackson\""},
+    {text: "loves: \"learning\""},
+    {text: "location: \"Boston\""},
+    {text: "profession: \"Web Development\""},
+    {text: "languages: \"JS, CLJ\""},
+    {text: "hustle: \"Rogue Pedicab\""},
   ]
 
   return (
@@ -139,7 +139,7 @@ const Hero = ({ className, theme }) => {
         <MXJXNMarker className="wow">
           <div>MXJXN.xyz</div>
         </MXJXNMarker>
-        <LilGuy>=> (</LilGuy>
+        <LilGuy>=>(</LilGuy>
         <Tagline>
           <Rotator time={4000} content={content} />
         </Tagline>

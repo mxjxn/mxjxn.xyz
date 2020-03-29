@@ -4,6 +4,10 @@ import { FireH3 } from '../Fire'
 
 const ExampleDiv = styled.div`
   padding: 1rem 3.5rem;
+  @media screen and (max-width:768px){
+    padding: 0 0.5em;
+  }
+
 `
 const ExampleFlex = styled.div`
   display: flex;

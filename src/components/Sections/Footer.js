@@ -10,6 +10,9 @@ const MXFooter = styled.div`
   margin: 3em 0 0 0;
   padding: 1em 3.5em;
   background: linear-gradient(to bottom, #555 0%, #333 100%);
+  @media screen and (max-width:768px){
+    padding: 0.2em 0.3em;
+  }
 `
 
 const FooterDiv = styled.div`
@@ -18,6 +21,12 @@ const FooterDiv = styled.div`
   }
   & li > a{
     color: white;
+  }
+
+  @media screen and (max-width:768px){
+    ul {
+    padding-inline-start:0px;
+    }
   }
 `
 

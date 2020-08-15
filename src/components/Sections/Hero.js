@@ -132,11 +132,11 @@ const Hero = ({ className, theme }) => {
         <MXJXNMarker className="wow">
           <div>MXJXN.xyz</div>
         </MXJXNMarker>
-        <LilGuy>=> (</LilGuy>
+        <LilGuy className="wow">=> (</LilGuy>
         <Tagline>
           <Rotator time={4000} content={content} />
         </Tagline>
-        <LilGuy>)</LilGuy>
+        <LilGuy className="wow">)</LilGuy>
       </MxSection>
     </ThemeProvider>
   )

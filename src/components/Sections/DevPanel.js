@@ -2,7 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import styled, {keyframes} from 'styled-components'
 import DevEntry from './DevEntry.mdx'
-import TechUsed from './TechUsed.mdx'
 import Flex from '../../containers/Flex'
 
 
@@ -62,9 +61,6 @@ const DevPanel = () => {
     <Fade delay={1000}>
       <DevSection>
         <Flex>
-          <Pane>
-            <TechUsed />
-          </Pane>
           <Pane>
             <DevEntry />
           </Pane>

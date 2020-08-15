@@ -1,26 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import MXBioContents from './BioContents.mdx'
 
 const MXBio = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 1.5em 3.5em;
-  min-height:60vh;
+  background: linear-gradient(90deg, #000000 0%, #f55555 100%)
+  p{
+    font-size: 0.8em;
+  }
 `
 
-const Left = styled.div`
-  margin-left:1em;
-`
-const Right = styled.div`
-  margin-right:1em;
-`
 
 const Bio = () => {
   return (
     <MXBio>
-      <Left>My Bio Section</Left>
-      <Right>My Bio Section</Right>
+      <MXBioContents/>
     </MXBio>
   )
 

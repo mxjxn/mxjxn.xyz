@@ -36,12 +36,11 @@ const FireH2 = styled.h2`
 
 const FireH3 = styled.h2`
   font-size: 1.26em;
-  display: ${ props => props.block ? 'block' : 'inline-block'};
   @media (max-width: 768px ) {
     display: block;
   }
-
   margin:${ props => props.margin ? props.margin : '0px'};
+  margin-right: 0.8em;
   font-weight:999;
   background-size: 200% auto;
   background-clip: text;

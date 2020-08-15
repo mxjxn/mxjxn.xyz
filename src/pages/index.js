@@ -12,8 +12,8 @@ export default () => (
     <GlobalStyle />
     <div className="content">
       <Hero theme={ themes.dark } />
-      <Examples/>
       <Bio/>
+      <Examples/>
       <DevEntry/>
       <Footer/>
     </div>

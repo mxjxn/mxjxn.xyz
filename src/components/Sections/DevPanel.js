@@ -16,7 +16,7 @@ const DevSection = styled.section`
 
   border-radius: 1em;
   ul {
-    list-style-type: none;
+    list-style-type: circle;
     list-style-position: inside;
   }
   li {

@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { FireH3 } from '../Fire'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { rainbowShadow } from '../../GlobalStyle'
 
 const ExampleDiv = styled.div`
+  border-radius: 2em;
   padding: 1rem 3.5rem;
   @media screen and (max-width:768px){
     padding: 0 0.5em;
@@ -21,11 +23,13 @@ align-items:center;
 `
 
 const Item = styled.div`
+  font-size:0.77rem;
   background: linear-gradient(35deg, #444 0%, #222 100%);
-  margin: 0.5em;
-  padding: 0.05em 1em;
-height: 2.2em;
-  border-radius: 999px;
+  animation: ${ rainbowShadow } 5s linear infinite;
+  padding: 0.2rem 0.3rem;
+line-height:1.3rem;
+  margin: 0.35em;
+  border-radius: 9px;
   color:white;
   transition: color 800ms linear ease-in-out;
   &:hover {
@@ -33,19 +37,29 @@ height: 2.2em;
   }
 `
 
+const H3 = ({children, ...props}) => (
+  <FireH3
+    margin="0.5rem 0 0.5rem -2.4rem"
+    {...props}>
+      {children}
+  </FireH3>
+)
+
 const Examples = ({className}) => {
   return (
     <ExampleDiv className={className}>
       <ExampleFlex>
-        <FireH3 display="inline">
-          <FontAwesomeIcon icon="hammer" />
-          Front-end Development
-        </FireH3>
+      <FireH3 >
+      <FontAwesomeIcon icon="hammer" />
+      Front-end Development
+    </FireH3>
         <Item>ES6 Javascript</Item>
         <Item>React</Item>
-        <Item>scss, emotion, styled</Item>
-        <Item>Clojurescript</Item>
+        <Item>redux</Item>
+        <Item>graphql</Item>
+        <Item>css</Item>
         <Item>Typescript</Item>
+        <Item>Clojurescript</Item>
       </ExampleFlex>
       <ExampleFlex>
         <FireH3>

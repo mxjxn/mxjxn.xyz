@@ -18,6 +18,7 @@ const MXFooter = styled.div`
 const FooterDiv = styled.div`
   & ul {
     margin:0;
+    list-style-type:none;
   }
   & li > a{
     color: white;

@@ -6,7 +6,7 @@ const MXBio = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background: linear-gradient(90deg, #000000 0%, #f55555 100%)
+  background: linear-gradient(40deg, #000000 0%, #f55555 80%)
   p{
     font-size: 0.8em;
   }

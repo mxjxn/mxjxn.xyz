@@ -58,18 +58,16 @@ const rainbowShadow = keyframes`
 
 const MxSection = styled.section`
   position: relative;
-  margin-bottom: 0.8em;
-  display: grid;
   grid-template-columns: auto 1fr 8fr 1fr;
   min-width: 690px;
   text-align:center;
   font-size: 1em;
-  padding: 0.2em 3.5em 0.05em;
-  animation: ${ rainbowShadow } 5s linear infinite;
+  padding: 4.2em 3.5em 0;
   overflow: hidden;
   flex-flow: row;
   align-items: baseline;
   background: ${ ({ theme }) => theme.background }; color: ${ ({ theme }) => theme.color }; transition-property: background, color; transition-duration: 0.25s; transition-delay: 0.2s;
+  z-index:0;
   .wow {
     display:inline-block;
     background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);
@@ -90,19 +88,46 @@ const MxSection = styled.section`
     padding-left:0.35em;
     align-self: center;
   }
+  .bg-vid {
+    position:absolute;
+    left:0;
+    right:0;
+    top:-50%;
+    width:100%;
+    height: auto;
+    z-index: -2;
+  }
+  .bg-darken {
+    position:absolute;
+    left:0;
+    right:0;
+    top:-50%;
+    bottom: 0;
+    width:100%;
+    height: auto;
+    z-index: -1;
+    background-color:#000;
+    opacity: 0.5;
+  }
+
+  h3 {
+    text-shadow:3px 3px black;
+  }
 `
 
 const MXJXNMarker = styled.h1`
   z-index:2;
   font-family: ${ ({ theme: { fonts } }) => fonts.headerFamily };
   font-weight:bold;
+font-size: 5rem;
   color: blue;
   letter-spacing: 0.05em;
   min-width: 170px;
   position: relative;
   margin:0;
-  padding: 1rem 0;
+  text-align:center;
   align-self: flex-end;
+  line-height: 1em;
 `
 
 const Tagline = styled.div`
@@ -116,27 +141,22 @@ const LilGuy = styled.div`
 `
 
 
+
+
 const Hero = ({ className, theme }) => {
-  const content = [
-    {text: "... love: \"art, music, bikes, code\" ..."},
-    {text: "... name: \"Max Jackson\" ..."},
-    {text: "... location: \"Boston\" ..."},
-    {text: "... profession: \"Web Development\" ..."},
-    {text: "... languages: \"javascript, clojure\" ..."},
-    {text: "... hustle: \"Rogue Pedicab\" ..."},
-  ]
 
   return (
     <ThemeProvider theme={theme}>
       <MxSection className={className}>
+        <video autoPlay muted loop className="bg-vid">
+          <source src="/bg1.mp4" type="video/mp4" />
+        </video>
+        <div className="bg-darken"> </div>
         <MXJXNMarker className="wow">
           <div>MXJXN.xyz</div>
+          <MagicCanvas />
         </MXJXNMarker>
-        <LilGuy className="wow">=> (</LilGuy>
-        <Tagline>
-          <Rotator time={4000} content={content} />
-        </Tagline>
-        <LilGuy className="wow">)</LilGuy>
+        <h3>Web Developer, Artist and Musician</h3>
       </MxSection>
     </ThemeProvider>
   )

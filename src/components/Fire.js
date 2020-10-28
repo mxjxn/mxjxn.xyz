@@ -36,7 +36,7 @@ const FireH2 = styled.h2`
 
 const FireH3 = styled.h2`
   font-size: 1.26em;
-  display: ${ props => props.block ? 'block' : 'inline-block'};
+  display: block;
   @media (max-width: 768px ) {
     display: block;
   }

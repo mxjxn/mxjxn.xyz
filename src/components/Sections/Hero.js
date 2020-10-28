@@ -161,7 +161,6 @@ const Hero = ({ className, theme }) => {
         <div className="bg-darken"> </div>
         <MXJXNMarker className="wow">
           <div>MXJXN.xyz</div>
-          <MagicCanvas />
         </MXJXNMarker>
         <h3>Web Developer, Artist and Musician</h3>
       </MxSection>

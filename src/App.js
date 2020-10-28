@@ -14,7 +14,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faChartLine, faHammer} from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faCheckSquare, faCoffee, faChartLine, faHammer)
-import { createGlobalStyle } from 'styled-components';
 // import './app.css'
 
 import './styles.css'

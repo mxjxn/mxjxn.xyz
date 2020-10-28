@@ -59,7 +59,6 @@ const rainbowShadow = keyframes`
 const MxSection = styled.section`
   position: relative;
   grid-template-columns: auto 1fr 8fr 1fr;
-  min-width: 690px;
   text-align:center;
   font-size: 1em;
   padding: 4.2em 3.5em 0;
@@ -113,6 +112,12 @@ const MxSection = styled.section`
   h3 {
     text-shadow:3px 3px black;
   }
+
+  @media screen and (max-width:768px){
+    font-size:0.75em;
+    padding:0.25em;
+  }
+  
 `
 
 const MXJXNMarker = styled.h1`
@@ -122,12 +127,14 @@ const MXJXNMarker = styled.h1`
 font-size: 5rem;
   color: blue;
   letter-spacing: 0.05em;
-  min-width: 170px;
   position: relative;
   margin:0;
   text-align:center;
   align-self: flex-end;
   line-height: 1em;
+  @media screen and (max-width:768px){
+    padding: 0.1rem 0.2rem;
+  }
 `
 
 const Tagline = styled.div`

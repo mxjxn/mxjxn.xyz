@@ -40,8 +40,8 @@ const FireH3 = styled.h2`
   @media (max-width: 768px ) {
     display: block;
   }
-
   margin:${ props => props.margin ? props.margin : '0px'};
+  margin-right: 0.8em;
   font-weight:999;
   background-size: 200% auto;
   background-clip: text;

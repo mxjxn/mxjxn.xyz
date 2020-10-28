@@ -3,9 +3,15 @@ import styled from 'styled-components'
 import { FireH3 } from '../Fire'
 import { TwoColumnGrid, LeftColumn, RightColumn } from '../../containers/Grid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { rainbowShadow } from '../../GlobalStyle'
 
 const ExampleDiv = styled.div`
+  border-radius: 2em;
   padding: 1rem 3.5rem;
+  @media screen and (max-width:768px){
+    padding: 0 0.5em;
+  }
+
 `
 const ExampleFlex = styled.div`
   display: flex;
@@ -31,6 +37,14 @@ const Item = styled.div`
     color: red;
   }
 `
+
+const H3 = ({children, ...props}) => (
+  <FireH3
+    margin="0.5rem 0 0.5rem -2.4rem"
+    {...props}>
+      {children}
+  </FireH3>
+)
 
 const Examples = ({className}) => {
   return (

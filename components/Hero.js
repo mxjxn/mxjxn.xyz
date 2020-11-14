@@ -18,15 +18,6 @@ const MxSection = styled.section`
   background: ${ ({ theme }) => theme.background }; color: ${ ({ theme }) => theme.color }; transition-property: background, color; transition-duration: 0.25s; transition-delay: 0.2s;
   z-index:0;
   .wow {
-    display:inline-block;
-    background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);
-    background-size: 200% auto;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color:transparent !important;
-    animation: ${ anim } 5s linear infinite;
   }
   .redgradient {
     background-image: linear-gradient(90deg, rgba(190,16,16,1) 0%, rgba(242,20,20,1) 16%, rgba(241,163,20,1) 39%, rgba(241,227,20,1) 46%, rgba(241,172,20,1) 57%, rgba(240,20,20,1) 77%, rgba(190,16,16,1) 100%);
@@ -83,6 +74,13 @@ const MXJXNMarker = styled.h1`
   align-self: flex-end;
   line-height: 1em;
   font-size: 6rem;
+  background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ${ anim } 5s linear infinite;
   @media screen and (max-width:768px){
     padding: 0.1rem 0.2rem;
     font-size:4.2rem;
@@ -112,8 +110,8 @@ const Hero = ({ className, theme }) => {
       <MxSection className={className}>
         <img src="/bg1.gif" className="bg-vid" />
         <div className="bg-darken"> </div>
-        <MXJXNMarker className="wow">
-          <div>MXJXN.xyz</div>
+        <MXJXNMarker>
+          MXJXN.xyz
         </MXJXNMarker>
         <h3>Web Developer, Artist and Musician</h3>
       </MxSection>

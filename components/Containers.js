@@ -3,11 +3,26 @@ import styled from 'styled-components'
 
 const Div = styled.div`
   padding: ${ props => props.narrow ? "0.2rem 1rem" : "1rem"};
+  text-align:center;
+  p {
+    text-align:left;
+  }
+  @media screen and (min-width:970px) {
+     text-align:left;
+  }
 `
 
 const Grid = styled.div`
-  display:grid;
-  grid-template-columns: [l-gutter] 5rem [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr [seven] 1fr [eight] 1fr [nine] 1fr [ten] 1fr [r-gutter] 5rem
+  display:block;
+    h1, h2 {
+      text-align:center;
+      margin-bottom: 0.5rem;
+    }
+  @media screen and (min-width:970px) {
+    display:grid;
+    grid-template-columns: [l-gutter] 5rem [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr [seven] 1fr [eight] 1fr [nine] 1fr [ten] 1fr [r-gutter] 5rem;
+
+  }
 `
 const Full = styled(Div)`
   grid-column: one / span 10;
@@ -75,10 +90,14 @@ const FlexWrap = styled.div`
 
 const CornerBox = styled.div`
   border-radius: 2rem;
-  margin: 1rem 3rem;
   padding: 1rem 2rem;
+  margin: 1rem 0.3rem;
   background: white;
   background-opacity: 0.15;
+  @media screen and (min-width:970px) {
+  margin: 1rem 3rem;
+  }
+
 `
 const DarkBox = styled(Div)`
   background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 90%, rgba(0,0,0,0) 100%);

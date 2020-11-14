@@ -33,6 +33,7 @@ const SocialSection = () => {
                 <Item href="https://twitter.com/twitter">Twitter</Item>
                 <Item href="https://instagram.com/fastaction">Instagram</Item>
                 <Item href="https://app.rarible.com/fastaction">Rarible</Item>
+                <Item href="https://soundcloud.com/mxjxn">Soundcloud</Item>
               </Flex>
             </RightTwoThird>
           </Grid>

@@ -8,6 +8,8 @@ import {
   FlexWrap
 } from '../Containers'
 
+import { Item } from '../Elements'
+
 const MusicSection = () => {
     return (
         <TealBox>
@@ -18,8 +20,8 @@ const MusicSection = () => {
             <RightTwoThird>
             <DarkBox>
                 <p>
-                  I write synthesizer music.
-                  All of my music is available for free on <a href="https://soundcloud.com/mxjxn">Soundcloud</a>.
+                  I write music on synthesizers and computers. I write music in <a href="https://renoise.com">Renoise</a>.
+                  All of my music is currently available for free on <Item href="https://soundcloud.com/mxjxn">Soundcloud</Item>.
                 </p>
             </DarkBox>
             </RightTwoThird>

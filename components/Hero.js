@@ -25,6 +25,7 @@ const MxSection = styled.section`
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color:transparent !important;
     animation: ${ anim } 5s linear infinite;
   }
   .redgradient {

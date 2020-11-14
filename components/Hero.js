@@ -81,13 +81,13 @@ const MXJXNMarker = styled.h1`
   text-align:center;
   align-self: flex-end;
   line-height: 1em;
-    font-size: 5rem;
-  @media screen and (max-width:500px){
-    font-size:3.8rem;
-  }
+  font-size: 6rem;
   @media screen and (max-width:768px){
     padding: 0.1rem 0.2rem;
     font-size:4.2rem;
+  }
+  @media screen and (max-width:500px){
+    font-size:3.8rem;
   }
 `
 
@@ -109,9 +109,7 @@ const Hero = ({ className, theme }) => {
   return (
     <ThemeProvider theme={theme}>
       <MxSection className={className}>
-        <video autoPlay muted loop className="bg-vid">
-          <source src="/bg1.mp4" type="video/mp4" />
-        </video>
+        <img src="/bg1.gif" className="bg-vid" />
         <div className="bg-darken"> </div>
         <MXJXNMarker className="wow">
           <div>MXJXN.xyz</div>

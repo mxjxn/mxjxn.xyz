@@ -74,7 +74,6 @@ const MXJXNMarker = styled.h1`
   z-index:2;
   font-family: ${ ({ theme: { fonts } }) => fonts.headerFamily };
   font-weight:bold;
-font-size: 5rem;
   color: blue;
   letter-spacing: 0.05em;
   position: relative;
@@ -82,8 +81,13 @@ font-size: 5rem;
   text-align:center;
   align-self: flex-end;
   line-height: 1em;
+    font-size: 5rem;
+  @media screen and (max-width:500px){
+    font-size:3.8rem;
+  }
   @media screen and (max-width:768px){
     padding: 0.1rem 0.2rem;
+    font-size:4.2rem;
   }
 `
 

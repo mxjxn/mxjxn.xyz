@@ -12,23 +12,15 @@ import { Item } from '../Elements'
 
 const CodeSection = () => {
   return (
-    <BlueBox roundTop>
+    <BlueBox>
       <Grid>
         <LeftThird>
-          <FireH1>Constantly compelled to create with code.</FireH1>
+          <FireH1>Creative Web3 Developer</FireH1>
         </LeftThird>
         <RightTwoThird>
           <DarkBox>
-            <p>
-              I am a front end web-developer working in Javascript, Clojure(script), and Solidity.
-            </p>
-            <p>
-              I like to do work in ...
-              <Item href="https://github.com/mxjxn/mxjxn.xyz">React</Item>
-              <Item href="https://gitlab.com/mxjxn/movitoken-relayer">Web3</Item>
-              <Item href="https://gitlab.com/movitoken/tokenswap">Solidity</Item>
-              <Item href="https://gitlab.com/mxjxn/gtd-app">Re-frame</Item>
-            </p>
+            <p> I have been a web developer for over 10 years, and have been working with blockchain technology since 2016.  </p>
+            <p>I am currently working as a Project Manager for <a href="https://charged.fi">Charged Particles</a>.</p>
             <p>Here is
               <Item href="https://github.com/mxjxn">My Github</Item>
               and

@@ -31,9 +31,9 @@ const SocialSection = () => {
             <RightTwoThird>
               <Flex>
                 <Item href="https://twitter.com/twitter">Twitter</Item>
-                <Item href="https://instagram.com/fastaction">Instagram</Item>
-                <Item href="https://app.rarible.com/fastaction">Rarible</Item>
-                <Item href="https://soundcloud.com/mxjxn">Soundcloud</Item>
+                <Item href="https://instagram.com/mxjxn.eth">Instagram</Item>
+                <Item href="https://lenster.xyz/u/mxjxn.lens">Lens</Item>
+                <Item href="https://cryptodon.lol/@mxjxn">Mastodon</Item>
               </Flex>
             </RightTwoThird>
           </Grid>

@@ -31,7 +31,7 @@ body {
   font-family: 'Roboto Mono', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
-  font-size: calc(12px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(11px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(2em + (1.3 - 1.0) * ((100vw - 300px)/(1600 - 300)));
   margin: 0;
   padding: 0;

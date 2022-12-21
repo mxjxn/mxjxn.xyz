@@ -20,6 +20,7 @@ font-size: 2em;
 `
 
 const AltFireH2 = styled.h2`
+  font-family: "Roboto Mono";
   background-size: 200% auto;
   background-clip: text;
   text-align: ${ props => props.align? props.align: "left" };
@@ -31,6 +32,7 @@ const AltFireH2 = styled.h2`
 `
 
 const FireH1 = styled.h1`
+  font-family: "Roboto Mono";
   font-size: 1.76em;
   font-weight:999;
   background-size: 200% auto;
@@ -43,7 +45,7 @@ const FireH1 = styled.h1`
 `
 
 const FireH2 = styled.h2`
-  font-family: "Permanent Marker";
+  font-family: "Roboto Mono";
   font-size: 1.66em;
   display: inline-block;
   font-weight:999;

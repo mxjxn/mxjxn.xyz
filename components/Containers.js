@@ -71,7 +71,7 @@ const BlueBox = styled(Rounded)`
 `
 
 const TealBox = styled(Rounded)`
-  background: linear-gradient(to bottom, rgba(125,227,250,1) 0%, rgba(4,130,176,1) 2%, rgba(3,90,110,1) 12%, rgba(11,62,78,1) 100%);
+  background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 `
 
 const Flex = styled.div`

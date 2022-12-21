@@ -17,8 +17,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Hero theme={theme.dark}/>
-      <CodeSection />
       <NFTSection />
+      <CodeSection />
       <MusicSection />
       <SocialSection />
       <Footer />
